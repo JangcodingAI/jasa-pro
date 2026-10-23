@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RAB &amp; Invoice Jasa Tenaga Kerja — Jasa Pro</title>
+<meta name="description" content="Aplikasi profesional untuk membuat RAB, penawaran jasa tenaga kerja, invoice pelunasan, budget pekerjaan, DP, riwayat, dan PDF.">
+<meta name="application-name" content="Jasa Pro">
+<meta name="theme-color" content="#0b5cb8">
+<meta name="color-scheme" content="light dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Jasa Pro">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="./favicon-64.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="preload" href="./inter-400-6ab57b.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./logo-default.png" as="image">
+<link rel="stylesheet" href="./fonts.css">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<aside id="side">
+<div class="brand"><img alt="Logo" class="blogo"/><div>Jasa Pro<small>RAB &amp; Invoice Maker</small></div><button id="closeSide" title="Tutup menu" type="button">«</button></div>
+<button class="nav on" data-p="data"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><rect height="9" width="7" x="3" y="3"></rect><rect height="5" width="7" x="14" y="3"></rect><rect height="9" width="7" x="14" y="12"></rect><rect height="5" width="7" x="3" y="16"></rect></svg>Data Proyek</button>
+<button class="nav" data-p="rab"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M8 13h8M8 17h5"></path></svg>Penawaran (RAB)</button>
+<button class="nav" data-p="inv"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><rect height="14" rx="2" width="20" x="2" y="5"></rect><path d="M2 10h20M6 15h4"></path></svg>Invoice Pelunasan</button>
+<button class="nav" data-p="bud"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M20 7H5a2 2 0 0 1 0-4h13v4"></path><path d="M3 5v14a2 2 0 0 0 2 2h15V7"></path><circle cx="16.5" cy="14" r="1.2"></circle></svg>Budget Pekerjaan</button>
+<div class="nav-lbl">Lainnya</div>
+<button class="nav" data-p="his"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Riwayat</button>
+<div class="sp"></div><div class="side-note">Invoice terisi otomatis dari data Penawaran.</div>
+<button class="nav install-nav" hidden="" id="installApp" type="button"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"></path></svg>Instal Aplikasi</button><div class="side-foot"><button aria-label="Pengaturan" class="nav setbtn" data-p="set"><span class="gi"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg></span><span><b>Pengaturan</b><small>Logo, tema &amp; template</small></span><svg class="ch" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24" width="16"><path d="M9 6l6 6-6 6"></path></svg></button></div>
+</aside><div id="scrim"></div>
+<button id="openSide" title="Buka menu" type="button">☰ Menu</button>
+<div id="top"><button aria-label="Buka menu navigasi" id="burger" title="Buka menu" type="button">☰</button><span id="topT">Data Proyek</span></div>
+<main>
+<section class="page on" id="pg-data"><div class="ph"><div><h1>Data Proyek</h1><p>Isi sekali, dipakai di Penawaran dan Invoice.</p></div></div>
+<div class="grid"><div id="fData"></div><div><div class="card"><h2>Ringkasan</h2><div class="stats" id="stats"></div>
+<div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn" data-go="rab">Buka Penawaran →</button><button class="ghost" data-go="inv">Buka Invoice →</button><button class="ghost" id="newDoc">Dokumen Baru</button></div></div></div></div></section>
+<section class="page" id="pg-rab"><div class="ph"><div><h1>Penawaran (RAB)</h1><p>Rencana anggaran biaya jasa tenaga kerja.</p></div><div class="pha"><button class="ghost" data-cur="rab" data-fmt="pdf">⬇ PDF</button><button class="btn" data-save="rab">＋ Simpan ke Riwayat</button></div></div>
+<div class="grid"><div>
+<div class="card"><h2>Judul</h2><div id="fRabT"></div></div>
+<div class="card"><h2>Uraian Pekerjaan</h2><div id="rows"></div><button class="add" id="addRow">+ Tambah pekerjaan</button><div class="tot"><span>Total</span><span id="totTxt"></span></div></div>
+<div class="card"><h2>Catatan</h2><textarea data-s="notes" rows="6"></textarea></div>
+<div class="card"><h2>Foto Dokumentasi (tanpa batas)</h2><input accept="image/*" id="photo" multiple="" type="file"/><div class="thumbs" id="thumbs"></div>
+<button class="ghost" id="clrP" style="margin-top:10px">Hapus semua foto</button><label>Slogan baris 1</label><input data-s="t1"/><label>Slogan baris 2</label><input data-s="t2"/></div>
+<div class="msg" id="msg-poster"></div></div>
+<div><div class="stage" id="st-poster"><div class="sheet" id="poster"></div></div></div></div></section>
+<section class="page" id="pg-inv"><div class="ph"><div><h1>Invoice Pelunasan</h1><p>Dibuat otomatis dari Penawaran, dipakai untuk penagihan setelah pekerjaan selesai.</p></div><div class="pha"><button class="ghost" data-cur="inv" data-fmt="pdf">⬇ PDF</button><button class="btn" data-save="inv">＋ Simpan ke Riwayat</button></div></div>
+<div class="grid"><div><div class="card"><h2>Detail Invoice</h2><div id="fInv"></div></div>
+<div class="card"><h2>Pembayaran</h2><div id="fPay"></div></div><div class="msg" id="msg-invoice"></div></div>
+<div><div class="stage" id="st-invoice"><div class="sheet" id="invoice"></div></div></div></div></section>
+<section class="page" id="pg-bud"><div class="ph"><div><h1>Budget Pekerjaan</h1><p>Nilai kontrak terisi otomatis dari setiap Penawaran yang disimpan. Catat DP dan pantau sisanya.</p></div></div>
+<div class="bsum" id="bSum"></div>
+<div class="tools"><div class="chips"><button class="bchip on" data-bf="all">Semua<i id="bc-all">0</i></button><button class="bchip" data-bf="run">Berjalan<i id="bc-run">0</i></button><button class="bchip" data-bf="done">Terbayar<i id="bc-done">0</i></button></div><input id="bq" placeholder="Cari klien, proyek, atau judul…"/></div>
+<div class="blist" id="bList"></div></section>
+<section class="page" id="pg-set"><div class="ph"><div><h1>Pengaturan</h1><p>Atur logo, teks, tema website, dan template dokumen. Tersimpan otomatis di browser ini.</p></div><div class="pha"><button class="ghost" id="playIntro" type="button">Putar Intro</button><button class="ghost" id="setReset">Reset Pengaturan</button></div></div>
+<div class="grid"><div>
+<div class="card"><h2>Logo &amp; Teks</h2><div class="lg"><div class="lgp"><img alt="Logo" id="setLogo"/></div><div><label class="btn" for="logoIn">⬆ Unggah Logo</label><input accept="image/*" hidden="" id="logoIn" type="file"/> <button class="ghost" id="logoReset">Logo Default</button><div class="sub" style="margin:8px 0 0">PNG transparan paling bagus. Otomatis diperkecil.</div></div></div>
+<label>Nama brand (menu samping)</label><input data-st="brand"/><label>Teks kecil di bawah nama</label><input data-st="tag"/>
+<label>Teks sebelah logo di dokumen (baris 1)</label><input data-s="t1"/><label>Teks sebelah logo di dokumen (baris 2)</label><input data-s="t2"/>
+<label class="chk"><input data-st="logoH" type="checkbox"/>Tampilkan logo di header dokumen</label><label class="chk"><input data-st="logoF" type="checkbox"/>Tampilkan logo &amp; teks di footer dokumen</label></div>
+<div class="card"><h2>Tema Website</h2><div class="seg" id="modeSeg"><button data-mode="auto">Otomatis</button><button data-mode="light">Terang</button><button data-mode="dark">Gelap</button></div>
+<span class="sub">Warna tema</span><div class="sws"><button class="sw" data-c="#0b5cb8" data-k="app" style="background:#0b5cb8" title="Biru"></button><button class="sw" data-c="#0f8a5f" data-k="app" style="background:#0f8a5f" title="Hijau"></button><button class="sw" data-c="#6d28d9" data-k="app" style="background:#6d28d9" title="Ungu"></button><button class="sw" data-c="#d97706" data-k="app" style="background:#d97706" title="Oranye"></button><button class="sw" data-c="#b91c1c" data-k="app" style="background:#b91c1c" title="Merah"></button><button class="sw" data-c="#0e7490" data-k="app" style="background:#0e7490" title="Teal"></button><button class="sw" data-c="#334155" data-k="app" style="background:#334155" title="Slate"></button><button class="sw" data-c="#be185d" data-k="app" style="background:#be185d" title="Pink"></button></div><span class="sub">Warna kustom</span><input data-st="app" type="color"/></div>
+<div class="card"><h2>Penyimpanan &amp; Cadangan</h2><div class="bar"><i id="stBar" style="width:0"></i></div><div class="stl"><span id="stTxt">Menghitung…</span><span id="stPct"></span></div>
+<div class="stats" style="margin-top:12px"><div class="stat">Dokumen Riwayat<b id="stH">0</b></div><div class="stat">Budget Pekerjaan<b id="stB">0</b></div></div>
+<p class="stnote">Semua data (draft, foto, riwayat, budget, pengaturan) disimpan di database browser <b>IndexedDB</b> yang kapasitasnya ratusan MB hingga GB — jauh lebih besar dari localStorage (±5 MB). Buat cadangan berkala agar data aman jika cache browser dibersihkan.</p>
+<div class="brow"><button class="btn" id="bkExp">⬇ Cadangkan Data</button><label class="fl" for="bkImp">⬆ Pulihkan Cadangan</label><input accept=".json,application/json" hidden="" id="bkImp" type="file"/></div>
+<div class="pst" id="stPst"><i></i><span>Memeriksa status penyimpanan…</span></div></div>
+<div class="card"><h2>Template Dokumen</h2><div class="tpg"><button class="tpc" data-tpl="classic"><div class="tpv t-classic"><i class="h"></i><i></i><i></i><i></i></div><b>Klasik</b></button><button class="tpc" data-tpl="minimal"><div class="tpv t-minimal"><i class="h"></i><i></i><i></i><i></i></div><b>Minimalis</b></button><button class="tpc" data-tpl="elegant"><div class="tpv t-elegant"><i class="h"></i><i></i><i></i><i></i></div><b>Elegan Gelap</b></button><button class="tpc" data-tpl="soft"><div class="tpv t-soft"><i class="h"></i><i></i><i></i><i></i></div><b>Lengkung</b></button></div>
+<span class="sub">Warna dokumen</span><div class="sws"><button class="sw follow" data-c="" data-k="doc">Ikuti tema</button><button class="sw" data-c="#0b5cb8" data-k="doc" style="background:#0b5cb8" title="Biru"></button><button class="sw" data-c="#0f8a5f" data-k="doc" style="background:#0f8a5f" title="Hijau"></button><button class="sw" data-c="#6d28d9" data-k="doc" style="background:#6d28d9" title="Ungu"></button><button class="sw" data-c="#d97706" data-k="doc" style="background:#d97706" title="Oranye"></button><button class="sw" data-c="#b91c1c" data-k="doc" style="background:#b91c1c" title="Merah"></button><button class="sw" data-c="#0e7490" data-k="doc" style="background:#0e7490" title="Teal"></button><button class="sw" data-c="#334155" data-k="doc" style="background:#334155" title="Slate"></button><button class="sw" data-c="#be185d" data-k="doc" style="background:#be185d" title="Pink"></button></div><span class="sub">Warna kustom dokumen</span><input data-st="doc" type="color"/>
+<label>Jenis huruf dokumen</label><select data-st="font"><option>Inter</option><option>Poppins</option><option>Montserrat</option><option>Merriweather</option></select></div>
+</div><div><div class="card"><h2>Pratinjau Dokumen</h2><div class="stage" id="st-set"><div class="sheet" id="setSheet"></div></div></div></div></div></section>
+<section class="page" id="pg-his"><div class="ph"><div><h1>Riwayat</h1><p>Penawaran dan invoice yang sudah disimpan, lengkap dengan foto. Tersimpan di database browser berkapasitas besar.</p></div></div>
+<div class="tools"><div class="chips"><button class="chip on" data-hf="all">Semua<i id="c-all">0</i></button><button class="chip" data-hf="rab">Penawaran<i id="c-rab">0</i></button><button class="chip" data-hf="inv">Invoice<i id="c-inv">0</i></button></div><input id="hq" placeholder="Cari klien, proyek, atau nomor…"/></div>
+<div id="hList"></div></section>
+</main>
+<div aria-label="Pratinjau dokumen" aria-modal="true" class="mask" id="mView" role="dialog"><div class="mbox wide"><div class="mh"><b id="mvT"></b><div style="display:flex;gap:8px"><button class="btn pdf" id="mvPdf">⬇ PDF</button><button class="btn" id="mvDl">⬇ JPG</button><button class="ghost" data-close="">Tutup</button></div></div><div class="stage" id="st-view"><div class="sheet" id="viewSheet"></div></div></div></div>
+<div aria-label="Konfirmasi hapus dokumen" aria-modal="true" class="mask" id="mDel" role="dialog"><div class="mbox"><h3>Hapus dari riwayat?</h3><p id="mdT"></p><div class="mf"><button class="ghost" data-close="">Batal</button><button class="del" id="mdOk">Ya, hapus</button></div></div></div>
+<div aria-label="Catat uang muka" aria-modal="true" class="mask" id="mDp" role="dialog"><div class="mbox"><h3 id="dpT">Ambil DP</h3><p>Catat uang muka yang diterima dari klien.</p><div class="dpinfo" id="dpInfo"></div>
+<label>Nominal DP (Rp)</label><input id="dpAmt" inputmode="numeric" min="0" placeholder="0" type="number"/>
+<div class="qp"><button class="ghost" data-pct="30">30%</button><button class="ghost" data-pct="50">50%</button><button class="ghost" data-pct="rest">Semua sisa</button></div><div class="dpprev" id="dpPrev"></div>
+<div class="two"><div><label>Tanggal diterima</label><input id="dpDate" type="date"/></div><div><label>Catatan (opsional)</label><input id="dpNote" placeholder="mis. Transfer BCA"/></div></div>
+<div class="msg" id="dpErr" style="color:#d92d20"></div><div class="mf"><button class="ghost" data-close="">Batal</button><button class="btn" id="dpOk">Simpan DP</button></div></div></div>
+<div aria-live="polite" id="toast" role="status"></div><div id="ghost"></div>
+<svg height="0" style="position:absolute" width="0"><defs><g id="gear"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></g></defs></svg>
+
+
+
+
+
+<script src="./logo.js"></script>
+<script src="./app.js"></script>
+<script src="./intro.js"></script>
+<script src="./pwa.js"></script>
+</body>
+</html>
